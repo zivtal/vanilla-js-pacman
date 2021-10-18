@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init(event)" onkeydown="handleKey(event)">
+    <div class="game">
+        <div class="message">
+            <h1></h1>
+            <button onclick="restartGame()">PLAY AGAIN</button>
+        </div>
+        <div class="score">Score: <span>0</span></div>
+        <div class="ghosts"></div>
+        <div class="pacman">
+            <div class="pacman_body">
+                <div class="pacman_eye"></div>
+                <div class="pacman_mouth"></div>
+            </div>
+        </div>
+        <table class="board"></table>
+    </div>
+    <script src="js/game.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghosts.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>
